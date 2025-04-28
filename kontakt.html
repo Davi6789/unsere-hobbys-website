@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4>Kontaktformular</h4>
+    <hr />
+    <form action="/senden" method="post">
+      <label for="anrede">Anrede *</label>
+      <select name="anrede" id="anrede" required>
+        <option value="Herr">Herr</option>
+        <option value="Frau">Frau</option>
+        <option value="Divers">Divers</option></select
+      ><br /><br>
+
+      <label for="Vorname">Vorname *</label>
+      <input type="text" id="Vorname" name="Vorname" required />
+      <label for="Nachname">Nachname *</label>
+      <input type="text" id="Nachname" name="Nachname" required /><br />
+      <br />
+      <label for="email">E-mail *</label>
+      <input type="email" id="email" name="email" required />
+      <label for="telefon">Telefon</label>
+      <input type="telefon" id="telefon" name="telefon" required /><br /><br />
+      <label for="betreff">Betreff *</label>
+      <input type="text" id="betreff" name="betreff" required /><br /><br />
+
+      <label for="kommentar">kommentar *</label>
+      <input type="text" id="kommentar" name="kommentar" required /><br /><br />
+
+      <p>Die mit einem Stern (*)markierten Felder sind Pflichtfelder</p>
+      <br />
+
+      <p>
+        <input type="checkbox" />Ich habe die
+        <a href="/Datenschutz.html">
+          <em>Datenschutzbestimmungen</em> </a
+        >zur Kenntnis genommen und erkenne diese an.
+      </p>
+      <input type="button" value="abschicken" />
+      <br /><br><hr>
+      <a href="index.html">Haupt seite</a>
+    </form>
+  </body>
+</html>
